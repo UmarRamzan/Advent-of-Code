@@ -11,6 +11,7 @@ fn main() {
 
     let mut num_valid = 0;
     for line in lines {
+        
         let elems: Vec<&str> = line.split(' ').collect();
         let min_max: Vec<&str> = elems[0].split('-').collect();
         let min = min_max[0].parse().unwrap();
