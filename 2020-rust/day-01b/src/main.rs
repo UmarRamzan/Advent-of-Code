@@ -34,6 +34,7 @@ fn merge_sort(input_vec: &Vec<i32>) -> Vec<i32> {
         let mut i = 0;
         let mut j = 0;
         let mut merged: Vec<i32> = Vec::new();
+
         while i < left.len() && j < right.len() {
             if left[i] < right[j] {
                 merged.push(left[i]);
